@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import sklearn.linear_model
-from sklearn.linear_model import LinearRegression
 
 data = pd.read_excel("arellano_data.xlsx")
 
