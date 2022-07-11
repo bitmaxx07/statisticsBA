@@ -1,0 +1,31 @@
+
+Notes
+=====
+
+This application is intended solely for the purpose of demonstrating
+AF_INET/SOCK_DGRAM in the lecture GRNVS [1]. It is by no way "perfect" code but
+represents a minimalistic yet fully functional example.
+
+
+Build
+=====
+
+To build udpchat just type "make" in the root source directory (gcc must be
+installed). The application is tested under Debian/GNU Linux (grml) and MacOSX
+10.8 (Xcode must be installed).
+
+
+Usage
+=====
+
+To keep the source code short and clear, this application does not use things
+such as getopt() to parse command line arguments. Instead you have to call
+
+./udpchat <local port> <destination IP> <remote port>
+
+with the arguments in exactly that order.
+
+
+You may also use nc to interact with the application, e.g. `nc 127.0.0.1 1234
+-u` paired with `udpchat 1234 127.0.0.1 1235`
+
